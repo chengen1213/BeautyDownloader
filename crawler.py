@@ -203,7 +203,7 @@ class ArticleInfo:
             path = os.path.abspath(relative_path)
             try:
                 if not os.path.exists(path):
-                    os.makedirs(path)
+                    # os.makedirs(path)
                     result += [(img_url, path) for img_url in data]
             except Exception as e:
                 logging.warning(e)
