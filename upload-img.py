@@ -22,8 +22,12 @@ try:
             count += 1
             ws.send(line.strip())
             result =  ws.recv()
+            print(result)
             line = urls.readline()
 except Exception as e:
     print(e)
+
+result = ws.send('')
+print(result)
 
 ws.close()
