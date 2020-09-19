@@ -27,7 +27,9 @@ try:
 except Exception as e:
     print(e)
 
-result = ws.send('statistics')
+print('-------------')
+ws.send('statistics')
+result =  ws.recv()
 print(result)
 
 ws.close()
